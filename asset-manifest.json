@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/Ameen014/Hand-Stone.git/static/css/main.a9175950.css",
-    "main.js": "/Ameen014/Hand-Stone.git/static/js/main.d4e42e36.js",
-    "static/js/453.79227a28.chunk.js": "/Ameen014/Hand-Stone.git/static/js/453.79227a28.chunk.js",
-    "static/media/تصميم-بدون-عنوان-2.png": "/Ameen014/Hand-Stone.git/static/media/تصميم-بدون-عنوان-2.91f7dccd9d91a56fc374.png",
-    "static/media/تصميم-بدون-عنوان-5.png": "/Ameen014/Hand-Stone.git/static/media/تصميم-بدون-عنوان-5.1c0339af68c4eea60e50.png",
-    "static/media/تصميم-بدون-عنوان-4.png": "/Ameen014/Hand-Stone.git/static/media/تصميم-بدون-عنوان-4.d95f021b3eb943625e3d.png",
-    "static/media/rtibLVI7gHJZo2pabexpTx3dVeCAP01eetEsr8pr.jpg": "/Ameen014/Hand-Stone.git/static/media/rtibLVI7gHJZo2pabexpTx3dVeCAP01eetEsr8pr.9010968c0706e39e3736.jpg",
-    "static/media/photo_2024-09-08_16-23-54.jpg": "/Ameen014/Hand-Stone.git/static/media/photo_2024-09-08_16-23-54.9a71e8644d27d01de831.jpg",
-    "static/media/slick.svg": "/Ameen014/Hand-Stone.git/static/media/slick.2630a3e3eab21c607e21.svg",
-    "static/media/slick.eot": "/Ameen014/Hand-Stone.git/static/media/slick.a4e97f5a2a64f0ab1323.eot",
-    "static/media/slick.ttf": "/Ameen014/Hand-Stone.git/static/media/slick.c94f7671dcc99dce43e2.ttf",
-    "static/media/slick.woff": "/Ameen014/Hand-Stone.git/static/media/slick.295183786cd8a1389865.woff",
-    "index.html": "/Ameen014/Hand-Stone.git/index.html",
-    "main.a9175950.css.map": "/Ameen014/Hand-Stone.git/static/css/main.a9175950.css.map",
-    "main.d4e42e36.js.map": "/Ameen014/Hand-Stone.git/static/js/main.d4e42e36.js.map",
-    "453.79227a28.chunk.js.map": "/Ameen014/Hand-Stone.git/static/js/453.79227a28.chunk.js.map"
+    "main.css": "/Hand-Stone/static/css/main.5a199654.css",
+    "main.js": "/Hand-Stone/static/js/main.61732bbe.js",
+    "static/js/453.79227a28.chunk.js": "/Hand-Stone/static/js/453.79227a28.chunk.js",
+    "static/media/تصميم-بدون-عنوان-2.png": "/Hand-Stone/static/media/تصميم-بدون-عنوان-2.91f7dccd9d91a56fc374.png",
+    "static/media/تصميم-بدون-عنوان-5.png": "/Hand-Stone/static/media/تصميم-بدون-عنوان-5.1c0339af68c4eea60e50.png",
+    "static/media/تصميم-بدون-عنوان-4.png": "/Hand-Stone/static/media/تصميم-بدون-عنوان-4.d95f021b3eb943625e3d.png",
+    "static/media/rtibLVI7gHJZo2pabexpTx3dVeCAP01eetEsr8pr.jpg": "/Hand-Stone/static/media/rtibLVI7gHJZo2pabexpTx3dVeCAP01eetEsr8pr.9010968c0706e39e3736.jpg",
+    "static/media/photo_2024-09-08_16-23-54.jpg": "/Hand-Stone/static/media/photo_2024-09-08_16-23-54.9a71e8644d27d01de831.jpg",
+    "static/media/slick.svg": "/Hand-Stone/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/Hand-Stone/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/Hand-Stone/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/Hand-Stone/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/Hand-Stone/index.html",
+    "main.5a199654.css.map": "/Hand-Stone/static/css/main.5a199654.css.map",
+    "main.61732bbe.js.map": "/Hand-Stone/static/js/main.61732bbe.js.map",
+    "453.79227a28.chunk.js.map": "/Hand-Stone/static/js/453.79227a28.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a9175950.css",
-    "static/js/main.d4e42e36.js"
+    "static/css/main.5a199654.css",
+    "static/js/main.61732bbe.js"
   ]
 }

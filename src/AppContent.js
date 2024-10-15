@@ -33,6 +33,7 @@ function AppContent () {
          <Cart   isCartOpen ={isCartOpen} toggleCart ={toggleCart}/>
           <Routes>
             <Route path="/" element={<HomePage/>}/>
+            <Route path="/Hand-Stone" element={<HomePage/>}/>
             <Route path="/home" element={<HomePage/>}/>
             <Route path="/Products" element={<Products/>}/>
             <Route path="/NewProducts" element={<NewProducts/>}/>

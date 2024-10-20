@@ -7,6 +7,7 @@ import Cart from "./Component/Cart/Cart";
 import Products from "./Component/Products/Product";
 import Aboutus from "./Component/Aboutus/Aboutus";
 import NewProducts from "./Component/Products/NewProducts";
+import ProductDetails from "./Component/Products/ProductDetails";
 
 function AppContent () {
 
@@ -36,9 +37,9 @@ function AppContent () {
             <Route path="/Hand-Stone" element={<HomePage/>}/>
             <Route path="/home" element={<HomePage/>}/>
             <Route path="/Products" element={<Products/>}/>
+            <Route path="/Product/:productid" element={<ProductDetails/>}/>
             <Route path="/NewProducts" element={<NewProducts/>}/>
             <Route path="/Aboutus" element={<Aboutus/>}/>
-          
           </Routes>
           <Footer/>
         </main>

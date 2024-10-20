@@ -5,9 +5,11 @@ import { Grid, Card, CardMedia, CardContent, Typography, Button, CircularProgres
 import { useDispatch } from "react-redux";
 import { cartActions } from "../../Store/cart-slice";
   import { useSnackbar } from 'notistack';
+  import { useNavigate } from 'react-router-dom';
 
 const Products = () => {
   const { enqueueSnackbar } = useSnackbar();
+  const navigate = useNavigate()
   const dispatch = useDispatch();
   const [products, setProducts] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
@@ -81,9 +83,15 @@ const Products = () => {
   };
 
   const handleCategoryChange = (event) => {
+
     const selectedCategoryName = event.target.value;
     const selectedCategoryObj = categories.find((category) => category.name === selectedCategoryName);
-    setSelectedCategory(selectedCategoryObj?.id || ""); // Set the ID based on the selected name
+  
+    if (selectedCategory === selectedCategoryObj?.id) {
+      setSelectedCategory("");
+    } else {
+      setSelectedCategory(selectedCategoryObj?.id || ""); 
+    }
   };
 
   const handlePageChange = (event, value) => {
@@ -100,7 +108,7 @@ const Products = () => {
               </Typography>
               <RadioGroup
                 aria-label="category"
-                value={categories.find((cat) => cat.id === selectedCategory)?.name || ""}
+                value={selectedCategory ? categories.find((cat) => cat.id === selectedCategory)?.name || "" : ""} // Adjust for deselection
                 onChange={handleCategoryChange}
                 row
               >
@@ -110,7 +118,7 @@ const Products = () => {
                     value={category.name}
                     control={<Radio sx={{ color: "#14213d" }} />}
                     label={`${category.name}`}
-                    sx={{ fontFamily: "Cairo",fontSize:"18px" }}
+                    sx={{ fontFamily: "Cairo",fontSize:"18px",fontWeight:"700 !important" }}
                   />
                 ))}
               </RadioGroup>
@@ -144,6 +152,7 @@ const Products = () => {
           {products.map((product) => (
             <Grid item xs={12} sm={6} md={4} lg={3} key={product.id}>
               <Card
+                
                 sx={{
                   boxShadow: 3,
                   borderRadius: 2,
@@ -156,7 +165,9 @@ const Products = () => {
                   height="220"
                   image={product.photo}
                   alt={product.name}
-                  sx={{ borderTopLeftRadius: 8, borderTopRightRadius: 8 }}
+                  sx={{ borderTopLeftRadius: 8, borderTopRightRadius: 8 , cursor:"pointer" }}
+                  onClick={()=>{ navigate(`/product/${product.id}`)}}
+                  
                 />
                 <CardContent>
                   <Box display="flex" justifyContent="space-between" mb={2}>

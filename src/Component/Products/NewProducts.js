@@ -5,9 +5,11 @@ import { Grid, Card, CardMedia, CardContent, Typography, Button, CircularProgres
 import { useDispatch } from "react-redux";
 import { cartActions } from "../../Store/cart-slice";
   import { useSnackbar } from 'notistack';
+  import { useNavigate } from 'react-router-dom';
 
 const NewProducts = () => {
   const { enqueueSnackbar } = useSnackbar();
+  const navigate = useNavigate()
   const dispatch = useDispatch();
   const [products, setProducts] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
@@ -100,7 +102,9 @@ const NewProducts = () => {
                   height="220"
                   image={product.photo}
                   alt={product.name}
-                  sx={{ borderTopLeftRadius: 8, borderTopRightRadius: 8 }}
+                  sx={{ borderTopLeftRadius: 8, borderTopRightRadius: 8 , cursor:"pointer" }}
+                  onClick={()=>{ navigate(`/product/${product.id}`)}}
+
                 />
                 <CardContent>
                   <Box display="flex" justifyContent="space-between" mb={2}>

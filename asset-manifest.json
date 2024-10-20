@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Hand-Stone/static/css/main.5a199654.css",
-    "main.js": "/Hand-Stone/static/js/main.745a44b6.js",
+    "main.js": "/Hand-Stone/static/js/main.9dc8407d.js",
     "static/js/453.79227a28.chunk.js": "/Hand-Stone/static/js/453.79227a28.chunk.js",
     "static/media/تصميم-بدون-عنوان-2.png": "/Hand-Stone/static/media/تصميم-بدون-عنوان-2.91f7dccd9d91a56fc374.png",
     "static/media/تصميم-بدون-عنوان-5.png": "/Hand-Stone/static/media/تصميم-بدون-عنوان-5.1c0339af68c4eea60e50.png",
@@ -14,11 +14,11 @@
     "static/media/slick.woff": "/Hand-Stone/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/Hand-Stone/index.html",
     "main.5a199654.css.map": "/Hand-Stone/static/css/main.5a199654.css.map",
-    "main.745a44b6.js.map": "/Hand-Stone/static/js/main.745a44b6.js.map",
+    "main.9dc8407d.js.map": "/Hand-Stone/static/js/main.9dc8407d.js.map",
     "453.79227a28.chunk.js.map": "/Hand-Stone/static/js/453.79227a28.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5a199654.css",
-    "static/js/main.745a44b6.js"
+    "static/js/main.9dc8407d.js"
   ]
 }

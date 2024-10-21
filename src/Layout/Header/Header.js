@@ -8,7 +8,7 @@ import { Box, Typography, Badge } from "@mui/material";
 
 const Header = ({isCartOpen , toggleCart}) => {
   const location = useLocation();
-  const home = ["/", "/Hand-Stone", "/home"].includes(location.pathname);
+  const home = ["/", "/Hand-Stone", "/home" , "/Hand-Stone/"].includes(location.pathname);
   const phoneNumber = "+963933680777";  
   const whatsappLink = `https://wa.me/${phoneNumber}`;
   const cartQuantity = useSelector(state => state.cart.totalQuantity) 

@@ -4,19 +4,22 @@ import { api_Routes } from "../../api_Route";
 import { Grid, Card, CardMedia, CardContent, Typography, Button, CircularProgress, Box, TextField, Radio, RadioGroup, FormControlLabel, FormControl, Pagination } from "@mui/material";
 import { useDispatch } from "react-redux";
 import { cartActions } from "../../Store/cart-slice";
-  import { useSnackbar } from 'notistack';
-  import { useNavigate } from 'react-router-dom';
+import { useSnackbar } from 'notistack';
+import { useNavigate } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 
 const Products = () => {
+  const location = useLocation();
   const { enqueueSnackbar } = useSnackbar();
   const navigate = useNavigate()
   const dispatch = useDispatch();
   const [products, setProducts] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
   const [keyword, setkeyword] = useState("");
-  const [selectedCategory, setSelectedCategory] = useState("");
   const [page, setPage] = useState(1); 
   const [totalPages, setTotalPages] = useState(1);
+  const categoryId = location.state?.categoryId;
+  const [selectedCategory, setSelectedCategory] = useState(categoryId || "");
 
   const categories = [
     { id: 1, name: "جداريات" },

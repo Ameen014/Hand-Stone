@@ -141,7 +141,7 @@ const ProductDetails = () => {
             </Grid>
           ))
         ) : (
-          <Typography>لا توجد صور اضافية </Typography>
+          <Typography mt={2}>لا توجد صور اضافية </Typography>
         )}
       </Grid>
     </Box>

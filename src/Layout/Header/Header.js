@@ -1,6 +1,6 @@
 import React ,{useState} from 'react';
 import { Link } from 'react-router-dom';
-import Logo from "../../assets/photo_2024-09-08_16-23-54.jpg";
+import Logo from "../../assets/Screenshot 2024-10-21 125909 (4).png";
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import { useLocation } from 'react-router-dom';
 import { useSelector } from 'react-redux';
@@ -8,7 +8,7 @@ import { Box, Typography, Badge } from "@mui/material";
 
 const Header = ({isCartOpen , toggleCart}) => {
   const location = useLocation();
-  const home = location.pathname === ("/") 
+  const home = ["/", "/Hand-Stone", "/home"].includes(location.pathname);
   const phoneNumber = "+963933680777";  
   const whatsappLink = `https://wa.me/${phoneNumber}`;
   const cartQuantity = useSelector(state => state.cart.totalQuantity) 
@@ -25,10 +25,6 @@ const Header = ({isCartOpen , toggleCart}) => {
         <div className="header-logo">
           <img src={Logo} alt="Hande Stone" />
         </div>
-
-
-        
-
 
         <nav className={`header-nav ${navVisible ? 'visible' : ''}`}>
           <ul>

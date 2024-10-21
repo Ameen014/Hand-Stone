@@ -17,8 +17,8 @@ body {
 }
 
 .header-logo img {
-  width: 80px;
-  height: 40px;
+  width: 100%;
+  height: 100%;
   border-radius: 8px;
 }
 
@@ -151,7 +151,7 @@ body {
   display: flex;  
   flex-direction: row;  
   max-width: 1200px;  
-  margin: 0 auto;  
+  margin: 10px auto;  
   padding: 20px;  
   padding-top: 100px;
   background-color: #ffffff;  
@@ -163,7 +163,6 @@ body {
 
 .image-container {  
   flex: 1;  
-  margin-right: 20px;  
   border-radius: 10px;  
   overflow: hidden;  
 }  
@@ -319,7 +318,7 @@ body {
 /*Footer*/
 .containerfooter{
   margin-top: 50px;
-  height: 220px;
+  height: 100%;
   text-align: center;
   background-color: #1E1818;
 }
@@ -337,6 +336,9 @@ body {
   width: 90%;
   margin: 30px auto;
   
+}
+.swiper-pagination-bullets.swiper-pagination-horizontal{
+  bottom: 0px !important;
 }
 
 .product-card {
@@ -377,6 +379,7 @@ body {
   flex-direction: column;  
   align-items: center;  
   transition: transform 0.2s;  
+  cursor: pointer;
 }  
 
 .category-card:hover {  

@@ -1,7 +1,7 @@
 import React from 'react';  
 
 const ContactSection = () => {  
-    const phoneNumber = "00963933680777";  
+    const phoneNumber = "963933680777";  
     const whatsappLink = `https://wa.me/${phoneNumber}`;  
 
     return (  

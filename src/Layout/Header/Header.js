@@ -5,8 +5,10 @@ import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import { useLocation } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import { Box, Typography, Badge } from "@mui/material";
+import { useNavigate } from 'react-router-dom';
 
 const Header = ({isCartOpen , toggleCart}) => {
+  const navigate = useNavigate();
   const location = useLocation();
   const home = ["/", "/Hand-Stone", "/home" , "/Hand-Stone/"].includes(location.pathname);
   const phoneNumber = "+963933680777";  
@@ -22,7 +24,7 @@ const Header = ({isCartOpen , toggleCart}) => {
   return (
     <div>
       <header className="header" dir="rtl">
-        <div className="header-logo">
+        <div className="header-logo" style={{cursor:"pointer"}} onClick={()=>{navigate(`/`)}}>
           <img src={Logo} alt="Hande Stone" />
         </div>
 
